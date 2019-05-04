@@ -1,0 +1,10 @@
+.Header{
+    width:100%;
+    text-align: center;
+    font-family: cursive;
+    font-size: 36px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    background-image: linear-gradient(to right, rgb(87, 16, 16) ,rgb(150, 107, 107));
+    color: #cee4e3;
+}
