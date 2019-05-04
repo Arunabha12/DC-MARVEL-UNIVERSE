@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dc-marvel-universe/static/css/main.606246bd.chunk.css",
+    "main.js": "/dc-marvel-universe/static/js/main.b186a60b.chunk.js",
+    "main.js.map": "/dc-marvel-universe/static/js/main.b186a60b.chunk.js.map",
+    "runtime~main.js": "/dc-marvel-universe/static/js/runtime~main.efbb4638.js",
+    "runtime~main.js.map": "/dc-marvel-universe/static/js/runtime~main.efbb4638.js.map",
+    "static/js/2.0de03e2a.chunk.js": "/dc-marvel-universe/static/js/2.0de03e2a.chunk.js",
+    "static/js/2.0de03e2a.chunk.js.map": "/dc-marvel-universe/static/js/2.0de03e2a.chunk.js.map",
+    "index.html": "/dc-marvel-universe/index.html",
+    "precache-manifest.1df9fc5522f7570d36c5046a05e8e219.js": "/dc-marvel-universe/precache-manifest.1df9fc5522f7570d36c5046a05e8e219.js",
+    "service-worker.js": "/dc-marvel-universe/service-worker.js",
+    "static/css/main.606246bd.chunk.css.map": "/dc-marvel-universe/static/css/main.606246bd.chunk.css.map"
+  }
+}
