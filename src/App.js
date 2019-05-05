@@ -6,7 +6,7 @@ import Header from './Components/Header/Header';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" >
         <Header />
         <Superhero />
       </div>

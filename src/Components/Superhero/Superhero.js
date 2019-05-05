@@ -39,7 +39,7 @@ class Superhero extends Component {
                 />
         });
         return(
-            <div className={classes.Background}>
+            <div className={classes.Background} style={{minHeight:`${window.innerHeight}px`}}>
                 <div className={classes.SearchBar}>
                     <input className={classes.Input} type='text' placeholder='Search Heroes and Villains' value={this.state.query} onChange={this.inputHandler}/>
                     <button className={classes.Button} onClick={this.submitHandler} type="submit">Search</button>
