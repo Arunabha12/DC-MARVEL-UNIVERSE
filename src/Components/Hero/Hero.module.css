@@ -1,12 +1,13 @@
 .Hero {
     display: block;
-    color:red;
+    color:rgb(87, 7, 7);
     border: 2px solid black;
     padding:24px;
     margin:40px;
     border-radius: 10px;
-    box-shadow: 4px 4px rgb(94, 81, 81);
+    box-shadow: 4px 4px #5e5151;
     word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Image {
