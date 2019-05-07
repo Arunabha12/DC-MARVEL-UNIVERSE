@@ -40,20 +40,27 @@ class Superhero extends Component {
         this.setState({loading:true})
     }
 
+    keyPressHandler=(event)=>{
+        if(event.key==="Enter"){
+            this.getresult();
+        this.setState({loading:true})
+    }
+    }
+
 
     render() {
         if(this.state.loading){
-            return(<h2>Loading...</h2>)
+            return(<h2 style={{color:'#5e0e0e'}}>Loading...</h2>)
         }
         else{
         return (
             <div className={classes.Background}>
                 <div className={classes.SearchBar}>
-                    <input className={classes.Input} type='text' placeholder='Search Heroes and Villains' value={this.state.query} onChange={this.inputHandler} />
+                    <input className={classes.Input} type='text' placeholder='Search Heroes and Villains'  onKeyPress={this.keyPressHandler} value={this.state.query} onChange={this.inputHandler} />
                     <button className={classes.Button} onClick={this.submitHandler} type="submit">Search</button>
                 </div>
                 <div>
-                    {this.state.error ? <h2>{this.state.error}</h2> : this.state.heroes.map(hero => {
+                    {this.state.error ? <h2 style={{color:'#5e0e0e'}}>{this.state.error}</h2> : this.state.heroes.map(hero => {
                         return <Hero
                             data={hero}
                             key={hero.id}
