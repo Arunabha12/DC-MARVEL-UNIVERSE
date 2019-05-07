@@ -5,21 +5,24 @@ import classes from './Superhero.module.css';
 
 
 class Superhero extends Component {
-    state = {
-        heroes: [],
-        query: '',
-        error: null
+    constructor(){
+        super();
+        this.state = {
+            heroes: [],
+            query: '',
+            error: null,
+            loading : false
+    }
     }
     getresult = () => {
         axios.get(`/${this.state.query}`)
             .then(response => {
                 if (response.data.error) {
-                    this.setState({ error: response.data.error });
+                    this.setState({ error: response.data.error,loading:false});
                 }
                 else {
-                    this.setState({ heroes: response.data.results,error: null });
-                }//console.log(response)
-
+                    this.setState({ heroes: response.data.results,error: null,loading:false });
+                }
             })
             .catch(error => {
                 console.log(error);
@@ -28,17 +31,21 @@ class Superhero extends Component {
 
     inputHandler = (event) => {
         this.setState({ query: event.target.value }, () => {
-
         })
     }
 
     submitHandler = () => {
         this.getresult();
         console.log(this.state.heroes.length)
+        this.setState({loading:true})
     }
 
 
     render() {
+        if(this.state.loading){
+            return(<h2>Loading...</h2>)
+        }
+        else{
         return (
             <div className={classes.Background}>
                 <div className={classes.SearchBar}>
@@ -46,7 +53,7 @@ class Superhero extends Component {
                     <button className={classes.Button} onClick={this.submitHandler} type="submit">Search</button>
                 </div>
                 <div>
-                    {this.state.error ? <p>{this.state.error}</p> : this.state.heroes.map(hero => {
+                    {this.state.error ? <h2>{this.state.error}</h2> : this.state.heroes.map(hero => {
                         return <Hero
                             data={hero}
                             key={hero.id}
@@ -55,6 +62,7 @@ class Superhero extends Component {
                 </div>
             </div>
         );
+    }
     }
 }
 
