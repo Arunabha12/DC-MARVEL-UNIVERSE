@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/DC-MARVEL-UNIVERSE/static/css/main.73d0924a.chunk.css",
+    "main.css": "/DC-MARVEL-UNIVERSE/static/css/main.6cf1b7f0.chunk.css",
     "main.js": "/DC-MARVEL-UNIVERSE/static/js/main.3b7dd150.chunk.js",
     "main.js.map": "/DC-MARVEL-UNIVERSE/static/js/main.3b7dd150.chunk.js.map",
     "runtime~main.js": "/DC-MARVEL-UNIVERSE/static/js/runtime~main.0d49075f.js",
@@ -8,8 +8,8 @@
     "static/js/2.0de03e2a.chunk.js": "/DC-MARVEL-UNIVERSE/static/js/2.0de03e2a.chunk.js",
     "static/js/2.0de03e2a.chunk.js.map": "/DC-MARVEL-UNIVERSE/static/js/2.0de03e2a.chunk.js.map",
     "index.html": "/DC-MARVEL-UNIVERSE/index.html",
-    "precache-manifest.8e0dd4fc395148aa670135dab5bc4673.js": "/DC-MARVEL-UNIVERSE/precache-manifest.8e0dd4fc395148aa670135dab5bc4673.js",
+    "precache-manifest.964f85b4b1182deb954f0a2de23ed3be.js": "/DC-MARVEL-UNIVERSE/precache-manifest.964f85b4b1182deb954f0a2de23ed3be.js",
     "service-worker.js": "/DC-MARVEL-UNIVERSE/service-worker.js",
-    "static/css/main.73d0924a.chunk.css.map": "/DC-MARVEL-UNIVERSE/static/css/main.73d0924a.chunk.css.map"
+    "static/css/main.6cf1b7f0.chunk.css.map": "/DC-MARVEL-UNIVERSE/static/css/main.6cf1b7f0.chunk.css.map"
   }
 }
