@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0297b9e0b0a4759fc74b948b0d713e56",
+    "revision": "b2e6ad5a0c204274f34cfb218c16c038",
     "url": "/DC-MARVEL-UNIVERSE/index.html"
   },
   {
-    "revision": "d637b35fa12ac49316eb",
-    "url": "/DC-MARVEL-UNIVERSE/static/css/main.b57bf578.chunk.css"
+    "revision": "945ae0860816df2a190c",
+    "url": "/DC-MARVEL-UNIVERSE/static/css/main.73d0924a.chunk.css"
   },
   {
     "revision": "ebe9b4964156c3872d40",
     "url": "/DC-MARVEL-UNIVERSE/static/js/2.0de03e2a.chunk.js"
   },
   {
-    "revision": "d637b35fa12ac49316eb",
+    "revision": "945ae0860816df2a190c",
     "url": "/DC-MARVEL-UNIVERSE/static/js/main.95c782f5.chunk.js"
   },
   {
