@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae09967b0238c0b83013d451d3e9a70a",
+    "revision": "cf4eff8bea05f82de332748dee5de22e",
     "url": "/DC-MARVEL-UNIVERSE/index.html"
   },
   {
-    "revision": "9fd59f233c3422b687f7",
+    "revision": "cfcbb1b633c51f3f9abd",
     "url": "/DC-MARVEL-UNIVERSE/static/css/main.6cf1b7f0.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DC-MARVEL-UNIVERSE/static/js/2.0de03e2a.chunk.js"
   },
   {
-    "revision": "9fd59f233c3422b687f7",
-    "url": "/DC-MARVEL-UNIVERSE/static/js/main.3b7dd150.chunk.js"
+    "revision": "cfcbb1b633c51f3f9abd",
+    "url": "/DC-MARVEL-UNIVERSE/static/js/main.b86e7b7e.chunk.js"
   },
   {
     "revision": "ef97d82b23b089e6922f",
