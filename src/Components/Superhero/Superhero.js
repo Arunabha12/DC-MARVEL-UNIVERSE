@@ -38,12 +38,24 @@ class Superhero extends Component {
         this.getresult();
         console.log(this.state.heroes.length)
         this.setState({loading:true})
+        let searchedItems = {
+            searched : this.state.query
+        }
+        axios.post('https://dc-marvel-universe.firebaseio.com/searched-items.json',searchedItems)
+        .then(response => console.log(response))
+        .catch(error => console.log(error))
     }
 
     keyPressHandler=(event)=>{
         if(event.key==="Enter"){
             this.getresult();
         this.setState({loading:true})
+        let searchedItems = {
+            searched : this.state.query
+        }
+        axios.post('https://dc-marvel-universe.firebaseio.com/searched-items.json',searchedItems)
+        .then(response => console.log(response))
+        .catch(error => console.log(error))
     }
     }
 
