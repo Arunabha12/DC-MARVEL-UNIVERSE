@@ -29,17 +29,32 @@ class Superhero extends Component {
             });
     }
 
+    componentDidMount(){
+        this.getDateTime();
+    }
+
     inputHandler = (event) => {
         this.setState({ query: event.target.value }, () => {
         })
+    }
+    getDateTime=()=>{
+        const today = new Date();
+        const dt= ("0"+today.getDate()).slice(-2)+"/"+("0" +today.getMonth()).slice(-2)+"/"+today.getUTCFullYear()+" "+("0"+today.getHours()).slice(-2)+":"+("0"+today.getMinutes()).slice(-2);
+        console.log(dt);
+        return dt;
     }
 
     submitHandler = () => {
         this.getresult();
         console.log(this.state.heroes.length)
         this.setState({loading:true})
-        let searchedItems = {
-            searched : this.state.query
+        this.datakeeper();
+    }
+
+    datakeeper=()=>{
+        const searchedItems = {
+            searched : this.state.query,
+            dt: this.getDateTime()
         }
         axios.post('https://dc-marvel-universe.firebaseio.com/searched-items.json',searchedItems)
         .then(response => console.log(response))
@@ -50,12 +65,7 @@ class Superhero extends Component {
         if(event.key==="Enter"){
             this.getresult();
         this.setState({loading:true})
-        let searchedItems = {
-            searched : this.state.query
-        }
-        axios.post('https://dc-marvel-universe.firebaseio.com/searched-items.json',searchedItems)
-        .then(response => console.log(response))
-        .catch(error => console.log(error))
+        this.datakeeper();
     }
     }
 
